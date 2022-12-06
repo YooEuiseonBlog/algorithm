@@ -2,7 +2,7 @@ package chap01;
 
 import java.util.Scanner;
 
-public class max {
+public class Max3 {
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
 
