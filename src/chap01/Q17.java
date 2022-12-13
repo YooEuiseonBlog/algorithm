@@ -15,7 +15,7 @@ public class Q17 {
                 System.out.print(" ");
             }
             for (int k = 1; k <= (i-1)*2+1; k++) {
-                System.out.print(i);
+                System.out.print(i%10);
             }           
             System.out.println();
         }
