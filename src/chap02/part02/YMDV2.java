@@ -28,11 +28,9 @@ public class YMDV2 {
             return before(-n);
         }
 
-        int daysMonth = mdays[isLeap(y)][m-1];
-
         d += n;
-        while(d > daysMonth) {
-            d -= daysMonth;
+        while(d > mdays[isLeap(y)][m-1]) {
+            d -= mdays[isLeap(y)][m-1];
             if(++m>12) {
                 y++;
                 m=1;
@@ -54,8 +52,7 @@ public class YMDV2 {
                 y--;
                 m=12;
             }
-            daysMonth = mdays[isLeap(y)][m-1];
-            d += daysMonth;
+            d += mdays[isLeap(y)][m-1];
         }
         return new YMDV2(y, m, d);
     }
